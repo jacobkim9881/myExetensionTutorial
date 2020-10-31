@@ -3,6 +3,7 @@ To every coder/designer who handed CSS, it makes web page more looking nice. Whe
 
 ## What is extensions? 
 ![chrome web store image](https://dev-to-uploads.s3.amazonaws.com/i/rj5necxen0fzd8mnnuzs.png)
+
 Extensions are made of HTML, Javascript and CSS. By executing only defined functions on javascript files of extensions, user experience is supported. For example, extensions can show the user some products user could like based on cookies and requests extensions can read or on certain website extensions could add CSS or javascript or both. Extensions are created by Google and used most browsers. Personally most of all it was nice that uses experience added user experience by CSS on surfing whole web pages(It is also possible when all URL is allowed on manifest.json) like dark mode browsers. 
 
 ### manifest.json 
