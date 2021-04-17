@@ -16,10 +16,19 @@ document.body.animate([
 ], 5000)
 document.body.style.borderColor = 'white'
 
-chrome.runtime.sendMessage(undefined,
-    "sent message."
-);
+//chrome.runtime.sendMessage(undefined,
+//    "sent message."
+//);
 
-chrome.runtime.onMessage.addListener((msg) => {
-console.log(msg)
-});
+//chrome.runtime.onMessage.addListener((msg) => {
+//console.log(msg)
+//});
+
+var ps = document.querySelectorAll("p");
+
+console.log(ps)
+
+var i;
+for (i = 0; i < ps.length; i++) { 
+  ps[i].style.display = "inline";
+}
