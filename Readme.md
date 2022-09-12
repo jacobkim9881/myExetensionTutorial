@@ -1,16 +1,16 @@
 ## Why I made my extensions?
-To every coder/designer who handed CSS, it makes web page more looking nice. Whenever some modules or gif tweets shows pretty and nice css, a thaought hit me why users should exeperience CSS effects but why don't users equip customized CSS effects on their web. 
+To every coder/designer who handles CSS, it makes web pages more looking nice. Whenever some modules or gif tweets show pretty and nice CSS, a thought hit me why users should experience CSS effects but why don't users equip customized CSS effects on their web? 
 
-## What is extensions? 
+## What are extensions? 
 ![chrome web store image](https://dev-to-uploads.s3.amazonaws.com/i/rj5necxen0fzd8mnnuzs.png)
 
-Extensions are made of HTML, Javascript and CSS. By executing only defined functions on javascript files of extensions, user experience is supported. For example, extensions can show the user some products user could like based on cookies and requests extensions can read or on certain website extensions could add CSS or javascript or both. Extensions are created by Google and used most browsers. Personally most of all it was nice that uses experience added user experience by CSS on surfing whole web pages(It is also possible when all URL is allowed on manifest.json) like dark mode browsers. 
+Extensions are made of HTML, Javascript, and CSS. By executing only defined functions on javascript files of extensions, user experience is supported. For example, extensions can show the user some products user could like based on cookies and requests extensions can read, or on certain websites, extensions could add CSS or javascript or both. Extensions are created by Google and used on most browsers. Personally most of all it was nice that uses experience added user experience by CSS on surfing whole web pages(It is also possible when all URL is allowed on manifest.json) like dark mode browsers. 
 
 ### manifest.json 
-This JSON file shows information of extensions. But also have lists of functions which is used in the extensions. It is most important for making extensions that only listed functions in manifest.json file are allowed to use. That means if you didn't list functions on manifest file then the browser won't allow using the extensions. Using only listed ones, extensions would be not used as hacking users' information tools. 
+This JSON file shows the information of extensions. But also have a list of scripts that are executed in the extensions while the user visits websites. It is most important for making extensions that only listed functions in manifest.json file are allowed to use. That means if you didn't list functions on the manifest file then the browser won't allow using the extensions. Using only listed ones, extensions would be not used as hacking users' information tools. 
 
 ## Let's make extensions sending log 'hello' on background script
-First, need to make extensions folder.
+First, need to make an extensions folder.
 ```
 mkdir myExtensions
 cd myExtensions
@@ -57,20 +57,20 @@ Make background.js.
 console.log("hello.")
 ```
 
-Go to chrome browser and put this address into address bar,
+Go to chrome browser and put this address into the address bar,
 chrome://extensions/
 Turn on Developer mode and click LOAD UNPACKED
 Load your extension folder.
-Click background page link in listed extension box.
+Click the background page link in the listed extension box.
 
 ![Uploading extensions for developer mode](https://dev-to-uploads.s3.amazonaws.com/i/qynqwp5l8vn61kq2cst6.png)
 
-Now you will see 'hello' log on the new window. This background javascript file logs 'hello' on console. Because using background js file is allowed by listing on manifest.json file.
+Now you will see 'hello' log on the new window. This background javascript file logs 'hello' on the console. Because using background js file is allowed by listing on manifest.json file.
 
 ![Hello message from background](https://dev-to-uploads.s3.amazonaws.com/i/rclc3f7z0qd3ep0r4cc2.png)
 
 ## Adding CSS on the browser while surfing.
-With content script browser's CSS could be changed or javascript file can be executed on the browser. For example, extensions can add CSS.
+With content script browser's CSS could be changed or a javascript file can be executed on the browser. For example, extensions can add CSS.
 
 Add content script on manifest.json.
 ```json
@@ -82,7 +82,7 @@ Add content script on manifest.json.
     ],
 ```
 
-Now manifest.json should look like this,
+Now, manifest.json should look like this,
 ```json
 {
     "name": "My Extension",
